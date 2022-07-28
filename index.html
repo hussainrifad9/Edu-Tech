@@ -17,22 +17,40 @@
   <!-- Nav Section -->
 
   <section class="container">
-    <nav class="navbar navbar-light bg-light p-3 d-flex justify-content-between">
-      <div>
-        <a class="navbar-brand text-secondary fw-bold fs-3">E-Academy & Tech</a>
-      </div>
-      <div>
-        <a class="mx-2 text-decoration-none fs-6" href="">Home</a>
-        <a class="mx-2 text-decoration-none fs-6" href="">Deals</a>
-        <a class="mx-2 text-decoration-none fs-6" href="">Success</a>
-        <a class="mx-2 text-decoration-none fs-6" href="">About</a>
-        <a class="mx-2 text-decoration-none fs-6" href="">Courses</a>
-      </div>
-      <div>
-        <div class="d-flex">
-          <button class=" border-1 btn btn-outline-success me-3 bg-info text-dark fw-semibold px-4" type="submit">Sign
-            In</button>
-          <button class=" border-1 btn btn-outline-success text-dark fw-semibold px-4" type="submit ">Register</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand text-secondary fw-bold fs-3" href="#">E-Academy & Tech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5 ps-lg-5">
+            <li class="nav-item">
+              <a class="nav-link ms-4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="#">Deals</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link ms-4" href="#">Success</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="#">About</a>
+            </li>
+          </ul>
+
+          <div class="d-flex">
+            <button class=" border-1 btn btn-outline-success me-3 bg-info text-dark fw-semibold px-4" type="submit">Sign
+              In</button>
+            <button class=" border-1 btn btn-outline-success text-dark fw-semibold px-4" type="submit ">Register</button>
+          </div>
+
         </div>
       </div>
     </nav>
@@ -52,7 +70,7 @@
       </div>
       <div class="carousel-inner ">
         <div class="carousel-item active">
-          <img src="images/cover/cover-1.png" class="d-block w-100 opacity-25" alt="...">
+          <img src="images/cover/cover-1.png" class="d-block w-sm-25 w-100 opacity-25" alt="...">
           <div class="carousel-caption d-flex flex-column justify-content-center h-100">
             <div>
             <h1 class="">Start learning digitally from now </h1>
@@ -263,11 +281,35 @@
           readable content of a page when looking at its layout.</p>
       </div>
       <div class="w-50 d-flex justify-content-end align-items-center ">
-        <a class="text-primary text-decoration-none bg-light px-4 py-2 rounded fw-bold" href="">Register Now</a>
+        <a class="text-primary text-decoration-none bg-light px-4 py-2 rounded fw-bold" href="#myModal" data-bs-toggle="modal">Register Now</a>
+        
+        <!-- Modal -->
+
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title text-primary">Register Now</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column justify-content-center p-5 gap-3">
+                      <input type="text" placeholder="Email">
+                      <input type="password" placeholder="Password">
+                      <input type="text" placeholder="First Name">
+                      <input type="text" placeholder="Last Name">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- Modal end -->
       </div>
     </div>
   </section>
-
+  
   <!-- Students -->
   <section class="container mt-5">
     <div>
@@ -330,71 +372,55 @@
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What other services are you compatible with?
+                What is the difference between flex and grid?
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>There are many variations of passages of available,</strong> but the majority have suffered
-                alteration in
-                some form, by injected humour, or randomised words which don't look even slightly believable. If
-                you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden <code> in the middle of text. </code>, All the generators on the
+                <strong>Grid and flexbox.</strong>  The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                I have a technical i need resolved, who do i email?
+                what is flexbox in css?
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>There are many variations of passages of available,</strong> but the majority have suffered
-                alteration in
-                some form, by injected humour, or randomised words which don't look even slightly believable. If
-                you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden <code> in the middle of text. </code>, All the generators on the
+                <strong>CSS flexbox layout allows you to easily format HTML.</strong>  Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space. It makes responsive design easier.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                What other services are you compatible with?
+                what is css box model?
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>There are many variations of passages of available,</strong> but the majority have suffered
-                alteration in
-                some form, by injected humour, or randomised words which don't look even slightly believable. If
-                you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden <code> in the middle of text. </code>, All the generators on the
+                <strong>In CSS, the term "box model" is used when talking about design and layout</strong> . The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingfour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                What other services are you compatible with?
+                what is semantic tag in html5?
               </button>
             </h2>
             <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>There are many variations of passages of available,</strong> but the majority have suffered
-                alteration in
-                some form, by injected humour, or randomised words which don't look even slightly believable. If
-                you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden <code> in the middle of text. </code>, All the generators on theF
+                <strong>Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way.</strong> Elements such as header, footer and article are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.
               </div>
             </div>
           </div>
